@@ -431,7 +431,7 @@ defmodule Timex.Parse.DateTime.Parsers do
       literal(space()),
       month_short(opts),
       literal(space()),
-      year2(padding: :zeroes),
+      year4(min: 2, max: 4),
       literal(space()),
       iso_time(opts)
     ]
